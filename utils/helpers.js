@@ -84,8 +84,8 @@ export function isBetween (num, x, y) {
           )
         }
       },
-      swin: {
-        displayName: 'Swin',
+      swim: {
+        displayName: 'Swim',
         max: 9900,
         unit: 'meters',
         step: 100,
@@ -94,7 +94,7 @@ export function isBetween (num, x, y) {
           return(
               <View>
                 <MaterialCommunityIcons
-                  name='swin'
+                  name='swim'
                   color={'black'}
                   size={35}
                 />
