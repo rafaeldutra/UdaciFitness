@@ -8,6 +8,9 @@ import {
   Text,
   TouchableOpacity,
   View,
+  TouchableHighlight, 
+  TouchableNativeFeedback,
+  TouchableWithouFeedback
 } from 'react-native';
 import AddEntry from '../components/AddEntry'
 
@@ -16,6 +19,9 @@ import { MonoText } from '../components/StyledText';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
+      {/* <TouchableOpacity style={styles.btn} onPress={() => this.handlePress()}>
+        <Text style={styles.btnText}>Touchable Highlight</Text>
+      </TouchableOpacity> */}
       <AddEntry />
     </View>
   );
@@ -61,6 +67,24 @@ function handleHelpPress() {
 }
 
 const styles = StyleSheet.create({
+  container1: {
+    flex: 1,
+    marginLeft: 10,
+    marginRight: 10,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  btn: {
+    backgroundColor: '#E53224',
+    padding: 10,
+    paddingLeft: 50,
+    paddingRight: 50,
+    justifyContent: 'center',
+    borderRadius: 5,
+  },
+  btnText: {
+    color: '#fff'
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
