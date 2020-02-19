@@ -10,15 +10,20 @@ import {
   View,
   TouchableHighlight, 
   TouchableNativeFeedback,
-  TouchableWithouFeedback
+  TouchableWithouFeedback,
+  Slider
 } from 'react-native';
 import AddEntry from '../components/AddEntry'
 
 import { MonoText } from '../components/StyledText';
 
 export default function HomeScreen() {
+
+ 
+
   return (
     <View style={styles.container}>
+      
       {/* <TouchableOpacity style={styles.btn} onPress={() => this.handlePress()}>
         <Text style={styles.btnText}>Touchable Highlight</Text>
       </TouchableOpacity> */}

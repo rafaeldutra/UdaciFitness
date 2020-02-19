@@ -6,6 +6,7 @@ import UdaciSteppers from './UdaciSteppers'
 import DateHeader from './DateHeader'
 import { Ionicons } from '@expo/vector-icons'
 import TextButton from './textbutton'
+import { submitEnty, removeEntry } from '../utils/api'
 
 function SubmitBtn ({ onPress }) {
     return (
@@ -62,14 +63,14 @@ export default class AddEntry extends Component {
         this.setState(() => ({
             run: 0,
             bike: 0,
-            swin: 0,
+            swim: 0,
             sleep: 0,
             eat: 0,
         }))
 
         // Navigate to home
 
-        // Save to 'DB'
+        submitEnty({ key, entry })
 
         // Clear local notification
     }
@@ -80,7 +81,7 @@ export default class AddEntry extends Component {
 
         // Route to Home
 
-        // Update "DB"
+        removeEntry(key)
     }
 
     render() {
